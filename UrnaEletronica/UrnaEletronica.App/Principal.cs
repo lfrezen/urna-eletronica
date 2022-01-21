@@ -196,6 +196,8 @@ namespace UrnaEletronica.App
             _dataAccess.RegistrarVoto(new Voto(candidato));
             MessageBox.Show("Voto realizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             pictureBoxCandidato.Image = null;
+            lblNomeCandidato.Text = string.Empty;
+            lblNomePartido.Text = string.Empty;
             lblCodigo.Text = string.Empty;
             AtivaBotoes();
         }
